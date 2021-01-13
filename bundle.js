@@ -26,5 +26,5 @@ function init() {
     request.setRequestHeader("Access-Control-Allow-Headers", "X-Requested-With, content-type, Authorization");
     // request.setRequestHeader('Host', 'private.gamestudiocr.com');
     request.setRequestHeader('SOAPAction', 'http://casino-solutions.com/CasinoLobby/LoginMethod');
-    request.send(body);
+    request.send();
 }
