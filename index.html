@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Esteban Padilla</title>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <header>
+                <span class="logo">Esteban Padilla</span>
+                <div class="navigation-container">
+                    <a class="navigation-link" href="index.html">Home</a>
+                    <a class="navigation-link" href="hobbiest.html">Hobbiest</a>
+                    <a class="navigation-link" href="contact.html">Contact</a>
+                </div>
+            </header>
+            <div class="container">
+                <div class="body-container">
+                </div>
+            </div>
+            <footer></footer>
+        </div>
+        <script>
+            function showContent(type) {
+                var content = document.getElementById(type);
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                } else {
+                    content.classList.add('hidden');
+                }
+            }
+        </script>
+    </body>
+
+</html>
