@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Colapsables</title>
+        <script type="module" src="js/main.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <h1 id="title">Project: Colapsables</h1>
+        <h2 id="subtitle">Description: un ejemplo de un collapsable</h2>
+
+        <style>
+            .collapsible {
+                background-color: #ff4c4c;
+                padding: 10px;
+                border: 1px solid #ccc;
+                cursor: pointer;
+                text-align: left;
+            }
+
+            .content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+            }
+
+            /* .active {
+                max-height: 100px;
+            } */
+        </style>
+
+        <button class="collapsible">Haz clic para expander</button>
+        <div class="content">
+            <p>Este es el contenido colapsable.</p>
+        </div>
+
+        <script>
+            document.querySelector(".collapsible").addEventListener("click", function () {
+
+                // this.classList.toggle("active");
+                let content = this.nextElementSibling;
+                console.dir(content);
+                content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+            });
+        </script>
+    </body>
+
+</html>
